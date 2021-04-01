@@ -38,6 +38,7 @@ function Login_brad() {
         //if user is logged in  direct to home page..not working when aftr login  i type login_brad url, everything gets refreshed
         if( !(typeof(userInfo)=='undefined') && userInfo.length!=0 && userInfo!=='Invalid details')
         {
+            console.log("Login useeffect, redirect");
             history.push(redirect)
         }
     }, [history,userInfo,redirect])
