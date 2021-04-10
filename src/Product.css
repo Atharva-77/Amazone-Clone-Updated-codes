@@ -1,0 +1,94 @@
+ .product
+{
+     /*If removed, title, price, img, button side-by-side is displayed*/
+    float:left;
+    /*All items aligned to center.Thus button size also reduced.*/
+    /*explore this*/
+    align-items: center;
+    justify-content: center; 
+    background-color: #E5E7EB;
+    /* background-color: white; */
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 400px;
+    max-height: 400px;
+    min-width: 100px; 
+    /*Due to this, product is shifted to left frm center.Container is taking whole segment i.e. like yt search channel.Uncomment border to see*/
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 1; 
+    margin-right: 10px;
+}
+.product_info
+{
+    width: 100%; /*To align text of product like title,price ,rating to left*/
+    height: 100px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.product > img
+{
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product > button
+{
+    /*2. background : #f0c14b; */background :rgb(106, 195, 247);
+    border: 1px solid;
+    margin-top: 10px;
+    /*1. border-color: #a88734 #ada694 #846a29; */
+    color: #111;
+}
+
+.product_price
+{
+    margin-top: 5px;
+}
+ 
+.product_rating
+{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------my code */
+/* 
+
+
+.product
+{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;     
+
+
+}
+
+.product_img
+{
+    object-fit: contain;
+    max-width: 151px;
+    max-height: 250px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.product_rating
+{
+    display: flex;
+    flex-direction: row;
+} */

@@ -1,0 +1,17 @@
+.product_info{
+    padding-bottom: 10px;
+}
+
+.product_price{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.product_img{
+    padding-top: 10px;
+}
+.product{
+    width: 200px;
+    max-height: 950px;
+    margin: 10px;
+}
