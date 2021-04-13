@@ -71,7 +71,7 @@ function Checkout({match,location}) {
                            id={item.idname}
                            title={item.name}
                            price={item.price}
-                           rating={3} //{item.avgrating}
+                           rating={item.avgrating}
                            image={item.image}
                            qty={item.qty}
                            countInStock={item.countInStock}
@@ -89,6 +89,7 @@ function Checkout({match,location}) {
                 </div>
 
             </div>
+
                 {console.log("SUmm= ",summ,total_item)}
                 {console.log("Baket qty= ",basketItems.length)}
             <div className="subtotalcompo">

@@ -38,7 +38,24 @@ function CheckoutProduct({id,title,price,rating,image,qty,countInStock}) {
                    ))}
                     
                 </div>
-                <br />Quantity<input value={qty}
+
+                <br />
+                Quantity <label value={qty}
+                                    onChange={(e)=>dispatch(cartListDetails(id,Number(e.target.value)))}/> 
+
+
+                        <select>
+                            {
+                            [...Array(countInStock).keys()].map((x) =>(
+                                        <option key={x+1} value={x+1}>{x+1}</option>
+                            ) )
+                            }
+                        </select>
+                        <br/>
+                        <br/>
+                <button onClick={()=> removeFromCart(id)}>Remove from Basket</button>
+                
+                {/* Quantity<input value={qty}
                                     onChange={(e)=>dispatch(cartListDetails(id,Number(e.target.value)))}/> 
                         
                          Stock avaliable:-
@@ -47,7 +64,7 @@ function CheckoutProduct({id,title,price,rating,image,qty,countInStock}) {
                                     <option key={x+1} value={x+1}>{x+1}</option>
                                 ) )
                             }
-                <button onClick={()=> removeFromCart(id)}>Remove to Basket</button>
+                <button onClick={()=> removeFromCart(id)}>Remove to Basket</button> */}
 
             </div>    
              
